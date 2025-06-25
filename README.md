@@ -15,30 +15,49 @@
 ##DESCRIPTION OF TASK1- FILE-INTEGRITY-CHECKER##
 
 Description:
-The File Integrity Checker is a Python-based application designed to monitor a specific folder for any file creation, deletion, or modification. The goal of this tool is to ensure the integrity of files by continuously checking their presence and content hash, alerting the user to any unauthorized changes.
+The File Integrity Checker is a Python-based utility designed to monitor a designated folder and detect any changes made to its contents. It actively checks for file creations, deletions, and modifications by computing and comparing cryptographic hashes. This enables the user to ensure that no unauthorized or unexpected changes have occurred. It operates by taking a snapshot of all the files within the monitored folder, generating their hash values using SHA-256, and regularly rechecking them to detect any discrepancies. If a file is modified, added, or removed, the application outputs a message indicating the change and the time it occurred.
+The primary motivation behind this tool is file integrity and security. In environments where data security and auditability are critical—such as corporate, academic, and personal computing contexts—being aware of even the smallest file-level change can be vital. Whether for compliance with industry regulations or for peace of mind, this tool ensures users can track changes in real time or over a defined interval.
 
-This application is particularly useful for security monitoring, compliance auditing, or data protection scenarios, where tracking changes in critical files is essential.
+
+Core Functionality
+-> Continuously monitors a specified folder for:
+
+   1.New files being added.
+
+   2.Existing files being deleted.
+
+   3.Files being altered (content-level modification).
+
+-> Hash comparison is used to identify exact file changes.
+
+-> Terminal output provides live updates of file integrity status.
+
 
 Platform & Tools Used:
+
 Platform:
-Developed and tested on Windows OS using the PyCharm IDE.
+The File Integrity Checker is a Python-based utility designed to monitor a designated folder and detect any changes made to its contents. It actively checks for file creations, deletions, and modifications by computing and comparing cryptographic hashes. This enables the user to ensure that no unauthorized or unexpected changes have occurred. It operates by taking a snapshot of all the files within the monitored folder, generating their hash values using SHA-256, and regularly rechecking them to detect any discrepancies. If a file is modified, added, or removed, the application outputs a message indicating the change and the time it occurred.
+The primary motivation behind this tool is file integrity and security. In environments where data security and auditability are critical—such as corporate, academic, and personal computing contexts—being aware of even the smallest file-level change can be vital. Whether for compliance with industry regulations or for peace of mind, this tool ensures users can track changes in real time or over a defined interval.
+
 
 Programming Language:
-Python 3.13
+The File Integrity Checker is a Python-based utility designed to monitor a designated folder and detect any changes made to its contents. It actively checks for file creations, deletions, and modifications by computing and comparing cryptographic hashes. This enables the user to ensure that no unauthorized or unexpected changes have occurred. It operates by taking a snapshot of all the files within the monitored folder, generating their hash values using SHA-256, and regularly rechecking them to detect any discrepancies. If a file is modified, added, or removed, the application outputs a message indicating the change and the time it occurred.
+The primary motivation behind this tool is file integrity and security. In environments where data security and auditability are critical—such as corporate, academic, and personal computing contexts—being aware of even the smallest file-level change can be vital. Whether for compliance with industry regulations or for peace of mind, this tool ensures users can track changes in real time or over a defined interval.
+
 
 Development Environment:
-Virtual environment created with .venv in PyCharm.
+A dedicated virtual environment (.venv) was created within the PyCharm project to isolate dependencies and ensure compatibility without affecting system-wide Python installations.
+
 
 Tools & Libraries Used:
+os: Enables access to the operating system’s file paths and directories.
 
-os: for file system navigation.
+hashlib: Used to generate secure hashes (SHA-256) for verifying file contents.
 
-hashlib: to generate file hashes (for content integrity).
+time: Facilitates periodic scanning by introducing timed delays in the loop.
 
-time: to run periodic scans.
 
 Applications:
-
 1.Security & Compliance: Detect unauthorized changes in system or config files.
 
 2.Academic & Research: Ensure raw data files remain untouched throughout experiments.
