@@ -76,7 +76,9 @@ Applications:
 3.FILE MODIFICATIONS:
 ![Image](https://github.com/user-attachments/assets/74492878-5d34-48db-abca-be3f29705519)
 
-4.ADDING AND DELETING OF FILE:
+4.ADDING NEW FILE:
+![Image](https://github.com/user-attachments/assets/19ad169d-78fd-450e-97c7-da6f1422a2dc)
+
 
 
 
