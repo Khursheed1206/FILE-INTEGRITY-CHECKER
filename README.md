@@ -79,7 +79,8 @@ Applications:
 4.ADDING NEW FILE:
 ![Image](https://github.com/user-attachments/assets/19ad169d-78fd-450e-97c7-da6f1422a2dc)
 
-
+5.DELETING OF FILE:
+![Image](https://github.com/user-attachments/assets/9a6ac44f-fec6-4992-a004-5547059a34c0)
 
 
 
